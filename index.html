@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Abhishek Kumar-(22SCSE1012393) General E-Shopping Cart</h1>
+        <div class="cart">
+            <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product">
+                <img src="Hauser Ball Pens.webp"
+                width="100px" height="100px">
+                <h2>Hauser XO Ball Pens Pack Of 10</h2>
+                <p>₹188.00</p>
+                <button class="add-to-cart" data-id="1" data-name="Hauser XO Ball Pens Pack Of 10" data-price="188.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Copy-jpeg.webp"
+                width="100px" height="100px">
+                <h2>Spiral Copy Paper Size: A5</h2>
+                <p>₹200.00</p>
+                <button class="add-to-cart" data-id="2" data-name="Spiral Copy Paper Size: A5" data-price="200.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Dry Fruits.webp"
+                width="100px" height="100px">
+                <h2>Kaju Badam - Sindhi Dry Fruits</h2>
+                <p>₹500.00</p>
+                <button class="add-to-cart" data-id="3" data-name="Kaju Badam - Sindhi Dry Fruits" data-price="500.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Rocket.webp"
+                width="100px" height="100px">
+                <h2>Diwali Crackers Chocolate</h2>
+                <p>₹300.00</p>
+                <button class="add-to-cart" data-id="4" data-name="Diwali Crackers Chocolate" data-price="300.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Coffee Mug.webp"
+                width="100px" height="100px">
+                <h2>Happy Diwali Coffee Mug (330 ml)</h2>
+                <p>₹100.00</p>
+                <button class="add-to-cart" data-id="5" data-name="Happy Diwali Coffee Mug (330 ml)" data-price="100.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Diwali_Candle.jpg"
+                width="100px" height="100px">
+                <h2>Handmade Matki Candles Diwali</h2>
+                <p>₹500.00</p>
+                <button class="add-to-cart" data-id="6" data-name="Handmade Matki Candles Diwali" data-price="500.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Oranges.webp"
+                width="100px" height="100px">
+                <h2>Natural Fresh Oranges</h2>
+                <p>₹100.00</p>
+                <button class="add-to-cart" data-id="7" data-name="Fresh Oranges" data-price="100.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Fresh Green Grapes.webp"
+                width="100px" height="100px">
+                <h2>Fresh Green-Land Grapes</h2>
+                <p>₹200.00</p>
+                <button class="add-to-cart" data-id="8" data-name="Fresh Green Grapes" data-price="200.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Apple.webp"
+                width="100px" height="100px">
+                <h2>Fresh Kashmiri Apples</h2>
+                <p>₹300.00</p>
+                <button class="add-to-cart" data-id="9" data-name="Fresh Kashmiri Apples" data-price="300.00">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div id="cartItems" class="cart-items hidden">
+            <h2>Your Cart</h2>
+            <ul id="cartList"></ul>
+            <p id="totalPrice">Total:₹0.00</p>
+            <button id="clearCart">Clear Cart</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
